@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <h1>Mobile Operataing System</h1>
+
+    <div id="container1"></div>
+
+    <h1>Mobile Manufacturers</h1>
+    <div id="container2"></div>
+
+    <script>
+        
+        // const divElement = React.createElement('div',{class:"header1"},ul);
+
+        const l1 = React.createElement('li',null, "Android");
+        const l2 = React.createElement('li',null, "Blackberry");
+        const l3 = React.createElement('li',null, "iPhone");
+        const l4 = React.createElement('li',null, "Blackberry");
+        const ul1 = React.createElement("ul",null, [l1,l2,l3,l4]);
+        const div1 = React.createElement('div',null,ul1);
+
+        const container1 = document.getElementById("container1");
+        const root1 = ReactDOM.createRoot(container1);
+        root1.render(div1);
+
+        const l5 = React.createElement('li',null, "Samsung");
+        const l6 = React.createElement('li',null, "HTC");
+        const l7 = React.createElement('li',null, "Micromax");
+        const l8 = React.createElement('li',null, "Apple");
+        const ul2 = React.createElement("ul",null, [l5,l6,l7,l8]);
+        const div2 = React.createElement('div',null,ul2);
+
+        const container2 = document.getElementById("container2");
+        const root2 = ReactDOM.createRoot(container2);
+        root2.render(div2);
+
+    </script>
+    
+</body>
+</html>
+
+<!-- <h1 class="header1">Mobile Operating system</h1>
+<h1 class="header2">Mobile Manufacturers</h1> -->
