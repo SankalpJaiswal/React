@@ -1,0 +1,12 @@
+.parent{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 500px;
+    background-color: orangered;
+    margin-top: 20px;
+}
+
+img{
+    height: 50px;
+}

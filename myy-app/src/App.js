@@ -1,20 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Button from './day2/Button';
-import ToDo from './day2/ToDo';
+import CardDetails from './day3/CardDetails';
 
 function App() {
   return (
     <div className="App">
       
-     
-
-      {/* <Button /> */}
-
-      <ToDo />
-
-
+    <CardDetails />
 
     </div>
   );
